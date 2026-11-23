@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(6, 60, 24);
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    position: relative;
+    margin: 10px 0 0 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: 38px;
+}
+
+.logo-main {
+    display: flex;
+    margin: 95px 0 0 0;
+}
+
+.logo-main img {
+    position: relative;
+    width: 300px;
+    height: 160px;
+    margin: 0px 0 10px 70px;
+}
+
+.nav-menu img {
+    width: auto;
+    height: 20px;
+    margin: 10px 0 0 0;
+}
+
+.nav-menu {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    align-items: end;
+    margin: 8px 0 0 120px;
+}
+
+.container-header {
+    display: flex;
+}
+
+main {
+    align-items: center;
+}
+
+.container-main {
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.container-main h2 {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.container-main h1 {
+    font-size: 40px;
+    font-weight: 750;
+}
+
+.container-localização {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.container-localização h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 60px 0 50px 0;
+}
+
+.mapa {
+    margin: 20px;
+}
+.endereço {
+    border: 2px solid transparent;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+    font-weight: bold;
+}
+
+.vernomaps a {
+    color: white;
+    width: 30px;
+    height: 40px;
+    font-style: normal;
+    background-color: red;
+}
+
+.vernomaps {
+    margin: 20px 0 20px 300px;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    height: 25px;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: red;
+}
+
+.container-avaliacoes {
+    display: flex;
+    background-color: rgb(255, 255, 90);
+    color: black;
+}
+
+.avaliacoes-content {
+    text-align: center;
+    align-items: center;
+}
+
+.avaliacoes-content h1 {
+    margin: 70px;
+}
+
+.avaliacoes-content h2 {
+    font-weight: 400;
+    font-size: 23px;
+}
+
+.avaliacao {
+    font-weight: bold;
+    text-align: left;
+    margin: 20px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.15);
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.avaliacao h3, h4, p {
+    margin-left: 5px;
+}
+
+.avaliacao h4 {
+    font-weight: 300;
+}
