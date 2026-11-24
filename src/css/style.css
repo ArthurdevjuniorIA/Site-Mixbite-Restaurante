@@ -133,7 +133,7 @@ p {
 .vernomaps a {
     color: white;
     text-decoration: none;
-    background-color: red;
+    background-color: var(--vermelho);
     font-size: 12px;
     font-weight: 500;
 }
@@ -143,7 +143,7 @@ p {
     width: 92px;
     height: 25px;
     border-radius: 5px;
-    background-color: red;
+    background-color: var(--vermelho);
 }
 
 /* SEÇÃO DAS AVALIAÇÕES */
