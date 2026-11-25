@@ -50,10 +50,10 @@
     height: 12px;
     border-radius: 9999px;
     border: none;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destacar na foto */
-    background-color: rgba(255, 255, 255, 0.6);  /* Troque 'color' por 'background-color' */
-    cursor: pointer;                             /* Mostra a mãozinha ao passar o mouse */
-    transition: transform 0.2s, background-color 0.2s; /* Suaviza a troca de estado */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.35s ease; /* Suaviza a troca de cor e tamanho */
 }
 
 #ativo {
