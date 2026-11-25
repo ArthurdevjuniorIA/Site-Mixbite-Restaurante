@@ -209,7 +209,9 @@ Cada página segue o mesmo padrão: **um HTML, um CSS e um JS próprios**, somad
 
 ```bash
 git clone https://github.com/ArthurdevjuniorIA/MixBite.git
-cd MixBite
+```
+```bash
+cd Site-Mixbite-Restaurante
 ```
 
 ### 2. Inicie um servidor local (escolha uma opção)
@@ -259,7 +261,7 @@ O site é publicado como **site estático**, sem etapa de build.
 A URL segue o formato:
 
 ```text
-https://<usuario>.github.io/<nome-do-repositorio>/
+https://arthurdevjunioria.github.io/Site-Mixbite-Restaurante/
 ```
 
 > 💡 Se você fizer um fork com outro nome de repositório, basta atualizar os links deste README.
