@@ -33,10 +33,10 @@ h2 {
     border-top: solid 0.5px black;
     border-bottom: solid 0.5px black;
     padding: 8px 20px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     row-gap: 8px;
     column-gap: 8px;
-    grid-template-columns: repeat(auto-fit);
 }
 
 #menu-nav a {
@@ -58,10 +58,3 @@ h2 {
 #menu-nav img {
     margin-right: 5px;
 }
-
-#link-pizza { max-width: 73px; }
-#link-burguer { max-width: px; }
-#link-pastel { max-width: px; }
-#link-shake { max-width: px; }
-#link-bebida { max-width: px; }
-#link-combo { max-width: px; }
