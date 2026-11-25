@@ -26,7 +26,6 @@
 .container-imagem {
     position: relative;
     width: 100%;
-    background-color: #000000; /* Evita flash branco na transição */
 }
 
 .imagem-loop {
@@ -34,7 +33,7 @@
     display: block;
     height: auto;
     opacity: 1;
-    transition: opacity 0.4s ease-in-out; /* Controla a suavidade da imagem */
+    transition: opacity 0.25s ease-in-out;
 }
 .indicadores-loop {
     position: absolute;
@@ -54,7 +53,7 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
-    transition: all 0.6s ease; /* Suaviza a troca de cor e tamanho */
+    transition: all 0.35s ease; /* Suaviza a troca de cor e tamanho */
 }
 
 #ativo {
