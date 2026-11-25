@@ -1,7 +1,7 @@
 const imagens = [
-    '../../assets/imgs/Foto1-loop.png',
-    '../../assets/imgs/Foto2-loop.png',
-    '../../assets/imgs/Foto3-loop.png'
+    '../../assets/imgs/home/Foto1-loop.png',
+    '../../assets/imgs/home/Foto2-loop.png',
+    '../../assets/imgs/home/Foto3-loop.png'
 ];
 
 const imagemBanner = document.querySelector('.imagem-loop');
