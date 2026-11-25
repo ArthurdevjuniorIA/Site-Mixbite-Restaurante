@@ -41,13 +41,21 @@ body {
     width: auto;
 }
 
-.nav-menu img {
-    height: 20px;
-}
-
 .nav-menu {
     display: flex;
     gap: 20px;
+}
+
+.nav-menu a {
+    transition: 0.5s;
+}
+
+.nav-menu a:hover {
+    transform: translateY(-5px);
+}
+
+.nav-menu img {
+    height: 20px;
 }
 
 /* MAIN */
