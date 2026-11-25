@@ -2,16 +2,16 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat-VariableFont_wght.woff2') format('truetype');
-    font-weight: 100 900; /* Libera todos os pesos de uma vez */
+    src: url('../../assets/fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900;
     font-style: normal;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 97px;
@@ -19,6 +19,7 @@ html {
 
 :root {
     --verde: #063C18;
+    --amarelo: #F2B705;
 }
 
 body {
@@ -117,11 +118,11 @@ p {
 
 .container-developers {
     text-align: center;
-    margin: 15px;
+    padding-bottom: 30px;
 }
 
 .container-developers h2 {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     font-size: small;
     font-weight: 300;
 }
@@ -130,5 +131,38 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    flex-wrap: wrap; /* Quebra linha automaticamente no celular */
+    gap: 40px;
+}
+
+.dev-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* Distância exata entre o nome e o botão */
+}
+
+.btn-github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px 14px;
+    border-radius: 9999px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-github img {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-github:hover {
+    transform: scale(1.05);
+    background-color: var(--amarelo);
 }
