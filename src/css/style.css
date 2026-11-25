@@ -200,3 +200,95 @@ p {
 .informacoes-do-user p {
     font-weight: 300;
 }
+
+/* CONTATOS */
+
+#container-contato {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 48px 20px;
+    background-color: white;
+}
+
+.contato-content {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.informacoes-container img {
+    position: relative;
+}
+
+.informacoes-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 15px;
+}
+
+.email-contato, .telefone-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:left;
+    gap: 12px;
+    padding: 10px;
+    border: 2px solid #063C18;
+    border-radius: 8px;
+}
+
+.telefone-contato p, .email-contato p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.email-contato, .telefone-contato {
+    text-align: center;
+    margin: 15px;
+    border: 2px solid #063C18;
+    border-radius: 8px;
+}
+
+/* RODAPÉ */
+
+#container-footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.imagem-descricao-footer img {
+    width: 160px;
+    height: auto;
+    margin: 0px auto 10px auto;
+}
+
+.imagem-descricao-footer {
+    padding: 48px 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.imagem-descricao-footer h2 {
+    font-size: large;
+}
+
+.container-developers {
+    text-align: center;
+    margin: 15px;
+}
+
+.container-developers h2 {
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: 300;
+}
+
+.developers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
