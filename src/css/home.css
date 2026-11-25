@@ -16,7 +16,50 @@
     text-align: center;
     padding: 70px 20px;
 }
+#container-loop {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    text-align: center;
 
+}
+.container-imagem {
+    position: relative;
+    width: 100%;
+}
+
+.imagem-loop {
+    width: 100%;
+    display: block;
+    height: auto;
+    opacity: 1;
+    transition: opacity 0.25s ease-in-out;
+}
+.indicadores-loop {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+/* Complete esta parte: */
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 9999px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.35s ease; /* Suaviza a troca de cor e tamanho */
+}
+
+#ativo {
+    background-color: var(--amarelo);            /* Troque 'color' por 'background-color' */
+    transform: scale(1.2);                       /* Deixa a bolinha ativa levemente maior */
+}
 .main-content img {
     width: 154px;
     height: auto;

@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/imgs/brand/favicon.png" type="image/png">
     <link rel="stylesheet" href="./src/css/global.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/home.css">
     <title> Mix Bite</title>
 </head>
 <body>
-    <!-- CABEÇALHO -->
-    <header class="container-header">
-        <div class="logo">
-            <img src="./assets/imgs/logo.svg" alt="Logo do Restaurante MixBite">
-        </div>
-        <nav class="nav-menu">
-            <a href="#container-apresentation"><img src="./assets/imgs/iconhome.svg" alt="Ícone de Home"></a>
-            <a href="#container-localização"><img src="./assets/imgs/Iconmapa.svg" alt="Ícone de Mapa"></a>
-            <a href="#container-avaliacoes"><img src="./assets/imgs/iconstar.svg" alt="Ícone de Estrela"></a>
-            <a href="#container-contato"><img src="./assets/imgs/iconquest.svg" alt="Ícone de Contato"></a>
-            <a href="src/pages/menu.html"><img src="./assets/imgs/iconorder.svg" alt="Ícone de Pedido"></a>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
     <main>
         <!-- APRESENTAÇÃO -->
         <section id="container-apresentation">
             <div class="main-content">
-                <img src="./assets/imgs/logo.svg" alt="Logo do Restaurante Mix Bite">
+                <img src="./assets/imgs/brand/logo.svg" alt="Logo do Restaurante Mix Bite">
 
                 <h4>Olá, nós somos</h4>
                 <h1>Mix Bite</h1>
                 <p> O melhor restaurante da Zona Norte de Natal com hambúrgueres, pizzas, pastéis e milk-shakes. </p>
             </div>
+        </section>
+        
+        <section id="container-loop">
+            <div class="container-imagem">
+                <img src="assets/imgs/home/Foto1-loop.png" alt="foto suculenta de uma pizza" class="imagem-loop">
+                <div class="indicadores-loop">
+                    <button type="button" class="button" id="ativo" aria-label="slide1"></button>
+                    <button type="button" class="button" aria-label="slide2"></button>
+                    <button type="button" class="button" aria-label="slide3"></button>
+
+                </div>
+            
+            </div>
+
         </section>
 
         <!-- LOCALIZAÇÃO -->
@@ -42,7 +44,11 @@
             <div class="localização-content">
                 
                 <div class="mapa">
-                    <img src="assets/imgs/mapa.png" alt="Mapa da localização do restaurante MixBite">
+                    <a href="https://www.google.com/maps/place/IFRN+-+Campus+Natal-Zona+Norte/@-5.7490945,-35.2650237,17z/data=!3m1!4b1!4m6!3m5!1s0x7b3abb5048b2fcb:0xef4f6c5edaa6d542!8m2!3d-5.7490999!4d-35.2604103!16s%2Fg%2F1tctxs6z?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                        <img src="assets/imgs/home/mapa.png" alt="Mapa da localização do restaurante MixBite">
+                    
+                    </a>
+                
                 </div>
 
                 <div class="endereço">
@@ -57,6 +63,7 @@
                 </div>
             </div>
         </section>
+
 
     <!-- AVALIAÇÕES -->
     <section id="container-avaliacoes">
@@ -136,34 +143,21 @@
             </div>
             <div class="informacoes-container">
                 <div class="telefone-contato">
-                    <img src="./assets/imgs/icontelefone.svg" alt="Icone Telefone">
+                    <img src="./assets/imgs/icons/icontelefone.svg" alt="Icone Telefone">
                         <p> 84 98765-4321 </p>
                 </div>
                 <div class="email-contato">
-                    <img src="./assets/imgs/iconemail.svg" alt="Icone E-mail">
+                    <img src="./assets/imgs/icons/iconemail.svg" alt="Icone E-mail">
                         <p> mixbitenatal@gmail.com </p>
                 </div>
             </div>
         </section>
 
-        <!-- FOOTER -->
-        <section id="container-footer">
-            <div class="footer-content">
-                <div class="imagem-descricao-footer">
-                    <img src="./assets/imgs/logo.svg" alt="Logo do restaurante do footer">
-                        <h2> MixBite, uma mistura de sabores! </h2>
-                </div>
-                <div class="container-developers">
-                    <h2> Desenvolvido por: </h2>
-                        <div class="developers">
-                            <p> Arthur Kauã </p>
-                            <p> Andrew Rafael </p>
-                            <p> Marcus Paulo </p>
-                        </div>
-                </div>
-            </div>
-        </section>
 
     </main>
+    <div id="footer-placeholder"></div>
+    <script src="./src/js/home.js"></script>
+    <script src="./src/js/global.js"></script>
+    
 </body>
 </html>
