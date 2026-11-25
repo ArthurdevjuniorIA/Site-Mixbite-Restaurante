@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --verde: #063C18;
+    --amarelo: #FFFF00;
+    --vermelho: #D2120F;
+}
+
+/* INÍCIO */
+
+h2 {
+    margin: 145px 0px 48px 0px;
+    text-align: center;
+}
+
+#lobster {
+    font-family: "Lobster", 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+#nome-verde {
+    color: var(--verde);
+}
+
+#nome-vermelho {
+    color: var(--vermelho);
+}
+
+/* NAVEGAÇÂO DO CARDÁPIO */
+
+#menu-nav {
+    border-top: solid 0.5px black;
+    border-bottom: solid 0.5px black;
+    padding: 8px 20px;
+    display: grid;
+    row-gap: 8px;
+    column-gap: 8px;
+    grid-template-columns: repeat(auto-fit);
+}
+
+#menu-nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#menu-nav a:hover {
+    color: var(--vermelho);
+}
+
+#menu-nav img {
+    margin-right: 5px;
+}
+
+#link-pizza { max-width: 73px; }
+#link-burguer { max-width: px; }
+#link-pastel { max-width: px; }
+#link-shake { max-width: px; }
+#link-bebida { max-width: px; }
+#link-combo { max-width: px; }
