@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 97px;
+}
+
+:root {
+    --verde: #063C18;
+}
+
+body {
+    background-color: white;
+    color:black;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* CABEÇALHO */
+
+.container-header {
+    background-color: var(--verde);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px 20px 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.logo img {
+    height: 38px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    transition: 0.5s;
+}
+
+.nav-menu a:hover {
+    transform: translateY(-5px);
+}
+
+.nav-menu img {
+    height: 20px;
+}
+
+/* MAIN */
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* RODAPÉ */
+
+#container-footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--verde);
+    color: white;
+}
+
+.imagem-descricao-footer img {
+    width: 160px;
+    height: auto;
+    margin: 0px auto 10px auto;
+}
+
+.imagem-descricao-footer {
+    padding: 48px 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.imagem-descricao-footer h2 {
+    font-size: large;
+}
+
+.container-developers {
+    text-align: center;
+    margin: 15px;
+}
+
+.container-developers h2 {
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: 300;
+}
+
+.developers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
