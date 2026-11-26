@@ -32,7 +32,6 @@ Plataforma web institucional e cardápio digital do **MixBite**, restaurante fic
 - [Arquitetura e estrutura de pastas](#-arquitetura-e-estrutura-de-pastas)
 - [Como executar localmente](#-como-executar-localmente)
 - [Solução de problemas](#-solução-de-problemas)
-- [Deploy no GitHub Pages](#-deploy-no-github-pages)
 - [Roadmap](#-roadmap)
 - [Como contribuir](#-como-contribuir)
 - [Desenvolvedores](#-desenvolvedores)
@@ -245,26 +244,7 @@ npx serve .
 | Header e footer não aparecem | Página aberta via `file://` | Rode por um servidor local (veja acima) |
 | Erro de CORS no console | Mesmo motivo | Idem |
 | Imagens ou CSS quebrados em subpáginas | Caminho relativo incorreto | Confira a profundidade da página e o ajuste de rotas em `global.js` |
-| Link do GitHub Pages retorna 404 | Pages não ativado ou nome do repositório diferente | Veja [Deploy no GitHub Pages](#-deploy-no-github-pages) |
-
----
-
-## 🌍 Deploy no GitHub Pages
-
-O site é publicado como **site estático**, sem etapa de build.
-
-1. No repositório, abra **Settings → Pages**.
-2. Em **Build and deployment**, escolha **Deploy from a branch**.
-3. Selecione a branch `main` e a pasta `/ (root)`.
-4. Salve e aguarde a publicação.
-
-A URL segue o formato:
-
-```text
-https://arthurdevjunioria.github.io/Site-Mixbite-Restaurante/
-```
-
-> 💡 Se você fizer um fork com outro nome de repositório, basta atualizar os links deste README.
+| Link do GitHub Pages retorna 404 | Pages não ativado ou nome do repositório diferente | Veja [Deploy no GitHub Pages](#-deploy-no-github-pages) | 
 
 ---
 
