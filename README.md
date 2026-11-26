@@ -264,8 +264,6 @@ npx serve .
 - [ ] Melhorias de acessibilidade (foco visível, `aria-*`, contraste)
 - [ ] Auditoria de desempenho com Lighthouse
 
-> As ideias de **persistência, filtros, acessibilidade e Lighthouse** são sugestões de evolução. Ajuste conforme a prioridade da equipe.
-
 ---
 
 ## 🤝 Como contribuir
