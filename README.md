@@ -244,7 +244,6 @@ npx serve .
 | Header e footer não aparecem | Página aberta via `file://` | Rode por um servidor local (veja acima) |
 | Erro de CORS no console | Mesmo motivo | Idem |
 | Imagens ou CSS quebrados em subpáginas | Caminho relativo incorreto | Confira a profundidade da página e o ajuste de rotas em `global.js` |
-| Link do GitHub Pages retorna 404 | Pages não ativado ou nome do repositório diferente | Veja [Deploy no GitHub Pages](#-deploy-no-github-pages) | 
 
 ---
 
