@@ -10,7 +10,7 @@ Plataforma web institucional e cardápio digital do **MixBite**, restaurante fic
 
 [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-F2B705?style=for-the-badge)](#-roadmap)
 [![Deploy](https://img.shields.io/badge/Deploy-GitHub%20Pages-063C18?style=for-the-badge&logo=github&logoColor=white)](https://arthurdevjunioria.github.io/MixBite/)
-[![Licença](https://img.shields.io/badge/Licença-GPL-063C18?style=for-the-badge)](./LICENSE)
+[![Licença](https://img.shields.io/badge/Licença-GNU-063C18?style=for-the-badge)](./LICENSE)
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
