@@ -32,6 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(erro => console.error(`Erro ao carregar ${caminhoArquivo}:`, erro));
     }
 
-    carregarComponente('src/components/header.html', 'header-placeholder');
-    carregarComponente('src/components/footer.html', 'footer-placeholder');
+    carregarComponente('../components/header.html', 'header-placeholder');
+    carregarComponente('../components/footer.html', 'footer-placeholder');
 });
