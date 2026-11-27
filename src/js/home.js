@@ -1,11 +1,15 @@
 const imagens = [
-    '../../assets/imgs/home/Foto1-loop.png',
-    '../../assets/imgs/home/Foto2-loop.png',
-    '../../assets/imgs/home/Foto3-loop.png'
+    'assets/imgs/home/Foto1-loop.png',
+    'assets/imgs/home/Foto2-loop.png',
+    'assets/imgs/home/Foto3-loop.png'
 ];
 
 const imagemBanner = document.querySelector('.imagem-loop');
 const botoes = document.querySelectorAll('.indicadores-loop .button');
+
+if (!imagemBanner || botoes.length === 0) {
+    // A página não tem carrossel; o restante do script não deve rodar.
+} else {
 
 let indiceAtual = 0;
 
@@ -49,3 +53,5 @@ botoes.forEach((botao, index) => {
         intervalo = setInterval(proximoSlide, 7000);
     });
 });
+
+}

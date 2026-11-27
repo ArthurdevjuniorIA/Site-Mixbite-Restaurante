@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --verde: #063C18;
-    --amarelo: #FFFF00;
     --vermelho: #D2120F;
+    --verde: #063C18;
+    --amarelo: #F2D500;
 }
 
 /* SEÇÃO DE APRESENTAÇÃO */
@@ -205,10 +205,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:left;
+    justify-content: flex-start;
     gap: 12px;
     padding: 10px;
-    border: 2px solid #063C18;
+    border: 2px solid var(--verde);
     border-radius: 8px;
 }
 
@@ -220,6 +220,6 @@
 .email-contato, .telefone-contato {
     text-align: center;
     margin: 15px;
-    border: 2px solid #063C18;
+    border: 2px solid var(--verde);
     border-radius: 8px;
 }

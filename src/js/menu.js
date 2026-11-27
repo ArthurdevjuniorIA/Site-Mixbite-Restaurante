@@ -1,11 +1,27 @@
 'use strict';
 
-'use strict';
-
 /// Para os ícones da navegação do cardápio mudarem de cor
 
 function mudar_cor(elemento, caminho) {
+    if (!elemento) return;
     elemento.src = caminho;
+}
+
+function configurarIcone(idLink, idIcone, caminhoOriginal, caminhoAtivo) {
+    const link = document.getElementById(idLink);
+    const icone = document.getElementById(idIcone);
+    if (!link || !icone) return;
+
+    link.addEventListener('mouseover', function() {
+        mudar_cor(icone, caminhoAtivo);
+    });
+    link.addEventListener('mouseout', function() {
+        mudar_cor(icone, caminhoOriginal);
+    });
+    link.addEventListener('click', function() {
+        mudar_cor(icone, caminhoAtivo);
+        setTimeout(() => mudar_cor(icone, caminhoOriginal), 200);
+    });
 }
 
 // Configuração para o link de pizza

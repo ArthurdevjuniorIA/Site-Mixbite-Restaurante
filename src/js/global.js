@@ -2,6 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const estaEmSubpasta = window.location.pathname.includes('/pages/');
     const caminhoBase = estaEmSubpasta ? '../../' : './';
 
+    function resolverCaminho(url) {
+        if (!url || /^(?:[a-z][a-z0-9+.-]*:|#)/i.test(url)) return url;
+
+        const semPrefixo = url.replace(/^(?:\.\/|\.\.\/)+/, '');
+        return `${estaEmSubpasta ? '../../' : ''}${semPrefixo}`;
+    }
+
     function carregarComponente(caminhoArquivo, idDestino) {
         const container = document.getElementById(idDestino);
         if (!container) return;
@@ -15,21 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 container.innerHTML = html;
 
                 // Se estiver dentro de src/pages/, ajusta os caminhos relativos para voltar à raiz
-                if (estaEmSubpasta) {
-                    container.querySelectorAll('img').forEach(img => {
-                        const srcAtual = img.getAttribute('src');
-                        if (srcAtual && !srcAtual.startsWith('http') && !srcAtual.startsWith('../../')) {
-                            img.setAttribute('src', `../../${srcAtual}`);
-                        }
-                    });
+                container.querySelectorAll('img').forEach(img => {
+                    const srcAtual = img.getAttribute('src');
+                    if (srcAtual) img.setAttribute('src', resolverCaminho(srcAtual));
+                });
 
-                    container.querySelectorAll('a').forEach(link => {
-                        const hrefAtual = link.getAttribute('href');
-                        if (hrefAtual && !hrefAtual.startsWith('http') && !hrefAtual.startsWith('#') && !hrefAtual.startsWith('../../')) {
-                            link.setAttribute('href', `../../${hrefAtual}`);
-                        }
-                    });
-                }
+                container.querySelectorAll('a').forEach(link => {
+                    const hrefAtual = link.getAttribute('href');
+                    if (hrefAtual) link.setAttribute('href', resolverCaminho(hrefAtual));
+                });
             })
             .catch(erro => console.error(`Erro ao carregar ${caminhoArquivo}:`, erro));
     }
